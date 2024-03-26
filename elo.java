@@ -172,7 +172,7 @@ public class elo{
                samecheck = true;
             }
          }
-         if(Name.equalsIgnoreCase("EMPTY")){
+         if("EMPTY".equalsIgnoreCase(Name)){
             System.out.println("Pick a different name!");
             samecheck = false;
          }
@@ -199,7 +199,7 @@ public class elo{
       System.out.println("Please enter a player:");
       Name = keyboard.nextLine();
       for(int x = 0; x < numPlayers; x++){
-         if(Name.equalsIgnoreCase("EMPTY")){
+         if("EMPTY".equalsIgnoreCase(Name)){
             System.out.println("Choose a different name!");
             x = numPlayers;
             samecheck = true;
@@ -227,7 +227,7 @@ public class elo{
       System.out.println("Who would you like to remove?");
       Name = keyboard.nextLine();
       for(int x = 0; x < numPlayers; x++){
-         if(Name.equalsIgnoreCase("EMPTY")){
+         if("EMPTY".equalsIgnoreCase(Name)){
             System.out.println("Choose a different name!");
             x = numPlayers;
             samecheck = true;
@@ -252,7 +252,7 @@ public class elo{
       // player 1
       Name = keyboard.nextLine();
       for(int x = 0; x < numPlayers; x++){
-         if(Name.equalsIgnoreCase("EMPTY")){
+         if("EMPTY".equalsIgnoreCase(Name)){
             System.out.println("Choose a different name!");
             x = numPlayers;
             samecheck = true;
@@ -263,7 +263,7 @@ public class elo{
             // player 2
             Name2 = keyboard.nextLine();
             for(int y = 0; y < numPlayers; y++){
-               if(Name2.equalsIgnoreCase("EMPTY")){
+               if("EMPTY".equalsIgnoreCase(Name2)){
                   System.out.println("Choose a different name!");
                   y = numPlayers;
                   samecheck = true;
@@ -347,7 +347,7 @@ public class elo{
       System.out.println();
       Save = keyboard.nextLine();
       // prints data to players.txt
-      if(Save.equalsIgnoreCase("s")){
+      if("s".equalsIgnoreCase(Save)){
          PrintWriter outfile = null;
          try{
             outfile = new PrintWriter(new FileWriter("players.txt"));
